@@ -52,18 +52,18 @@ class LinkSpider(scrapy.Spider):
 
         yield {
             "page": response.url,
-            # "links": response.css("a::attr(href)").getall()
         }
 
 def main():
     logging.getLogger('matplotlib.font_manager').setLevel(logging.ERROR)
 
-    process = CrawlerProcess(settings={
-    "FEED_FORMAT": "json",
-    "FEED_URI": "output.json"
-    })
+    # UNCOMMENT this segment and comment the process creation underneath to print out yield to JSON file
+    # process = CrawlerProcess(settings={
+    # "FEED_FORMAT": "json",
+    # "FEED_URI": "output.json"
+    # })
   
-    # process = CrawlerProcess()
+    process = CrawlerProcess()
 
     process.crawl(LinkSpider, urls=["https://webscraper.io/test-sites/e-commerce/allinone",
                                     "https://webscraper.io/test-sites/e-commerce/allinone/computers",
