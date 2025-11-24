@@ -1,0 +1,5 @@
+50
+https://webscraper.io/test-sites/e-commerce/allinone
+https://webscraper.io/test-sites/e-commerce/allinone
+https://webscraper.io/test-sites/e-commerce/allinone/computers
+https://webscraper.io/test-sites/e-commerce/allinone/phones
