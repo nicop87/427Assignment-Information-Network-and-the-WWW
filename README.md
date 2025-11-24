@@ -17,6 +17,7 @@ For this project we implemented following functions/arguments:
     - This plots the frequency of the in-degree of each node. We just `Counter` from `collections` in order to properly track the amount and organize the data.
 - `--pagerank_values`
     - This calls the function `pagerank` from `networkx`. It gives a value to each node and writes a file with the website url alongside the value of it. It is organized from highest to lowest value.
+    - You need to add a `.txt` file so that it is an appropriately named file. 
 
 ## Running the program
 Either the `--crawler` or the `--input` must be appropriately set for the program to run. and both the `--crawler` and `--crawler_graph` must be set at the same time.
